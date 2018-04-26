@@ -1,4 +1,4 @@
-    @import url('bootstrap.css');
+     @import url('bootstrap.css');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i|Poppins:300,400,500,600,700');
 @import url('animsition.css');
 @import url('font-awesome.min.css');
@@ -3953,6 +3953,12 @@ div .padding-bottom-0px {
     font-weight: 600;
     line-height: 20px;
 }
+}
+
+a.button:hover,
+a.bg2:hover {
+    color: white;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 430px) {   

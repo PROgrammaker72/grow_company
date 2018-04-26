@@ -271,5 +271,6 @@ bottom: 10%;
 @media (max-width: 650px) {
 	.sections-conteiner{
 		flex-direction: column-reverse;
-}
+    padding-top: 40px;
+  }
 }

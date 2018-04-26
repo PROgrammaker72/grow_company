@@ -22,7 +22,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
 </head>
-<body class="home">
+<body class="home" onload="ownpreloader()">
+	<div id="preloader"><img src="images/sticked-logo.png"></div>
+	<a id="ring" href="tel:6474787282" style><i class="fa fa-phone"></i></a>
 	<div class="animsition">
 		<!-- <div class="wrapper boxed"> -->
 			<div class="menu hidden-lg-up">
@@ -36,11 +38,11 @@
 					<li><a href="http://www.acadiadc.ca/contact.html">Contact Us</a></li>
 				</ul>
 			</div>
-			<div id="top-line">
+			<!-- <div id="top-line">
 				<div class="boxed">
 					<a class="mob-show" href="tel:6474787282"><i class="fa fa-phone"></i> (647) 478-7282</a>
 				</div>
-			</div>
+			</div> -->
 			<header class="navbar boxed js-navbar">
 				<button aria-expanded="false" class="navbar-toggle hidden-lg-up" data-target="#navbar-collapse" data-toggle="collapse" type="button"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="brand" href="index.html"><img alt="AcadiaDC" class="logo" src="images/logo.png"></a> <a class="brand sticked-brand" href="index.html" style="display:none;"><img alt="AcadiaDC" class="logo" src="images/sticked-logo.png"></a>
 				<nav class="main-menu hidden-sm hidden-xs">
@@ -64,19 +66,21 @@
 								<li data-fsmasterspeed="" data-masterspeed="" data-slotamount='' data-transition=''>
 									<!-- Main image-->
 									<img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="5" data-bgposition="center 0" data-bgrepeat="no-repeat" src="images/slider/slide1.jpg"> <!-- Layer 1 -->
-									<div class="tp-caption tp-shape tp-shapewrapper tp-resizeme fix-horiz-line" data-frames='[{"from":"x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1000,"to":"o:1;","delay":0,"ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]' data-height="5" data-hoffset="['249']" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-textalign="['left','left','left','left']" data-type="shape" data-voffset="['-340']" data-whitespace="nowrap" data-width="185" data-x="['left']" data-y="['middle','middle','middle','middle']" style="background-color: rgb(205,32,40);"></div><!-- верхушка -->
+									<div class="tp-caption tp-shape tp-shapewrapper tp-resizeme fix-horiz-line" data-frames='[{"from":"x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1000,"to":"o:1;","delay":0,"ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]' data-height="5" data-hoffset="['131']" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-textalign="['left','left','left','left']" data-type="shape" data-voffset="['-340']" data-whitespace="nowrap" data-width="240" data-x="['left']" data-y="['middle','middle','middle','middle']" style="background-color: rgb(205,32,40);"></div><!-- верхушка -->
 
-									<div class="tp-caption tp-shape tp-shapewrapper tp-resizeme vert-line" data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1000,"to":"o:1;","delay":600,"ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]' data-height="300" data-hoffset="['430']" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-textalign="['left','left','left','left']" data-type="shape" data-voffset="['-193']" data-whitespace="nowrap" data-width="5" data-x="['left']" data-y="['middle','middle','middle','middle']" style="background-color: rgb(205,32,40);"></div><!-- палка справа -->
+								<div class="tp-caption tp-shape tp-shapewrapper tp-resizeme vert-line" data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1000,"to":"o:1;","delay":600,"ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]' data-height="480" data-hoffset="['370']" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-textalign="['left','left','left','left']" data-type="shape" data-voffset="['-104']" data-whitespace="nowrap" data-width="5" data-x="['left']" data-y="['middle','middle','middle','middle']" style="background-color: rgb(205,32,40);"></div><!-- палка справа -->
 
-									<div class="tp-caption tp-shape tp-shapewrapper tp-resizeme fix-horiz-line" data-frames='[{"from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1000,"to":"o:1;","delay":1200,"ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]' data-height="5" data-hoffset="['249']" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-textalign="['left','left','left','left']" data-type="shape" data-voffset="['-45']" data-whitespace="nowrap" data-width="185" data-x="['left']" data-y="['middle','middle','middle','middle']" style="background-color:rgb(205,32,40);"></div><!-- низ -->
+								<div class="tp-caption tp-shape tp-shapewrapper tp-resizeme fix-horiz-line" data-frames='[{"from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1000,"to":"o:1;","delay":1200,"ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]' data-height="5" data-hoffset="['131']" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-textalign="['left','left','left','left']" data-type="shape" data-voffset="['133']" data-whitespace="nowrap" data-width="240" data-x="['left']" data-y="['middle','middle','middle','middle']" style="background-color:rgb(205,32,40);"></div><!-- низ -->
 
-									<div class="tp-caption tp-shape tp-shapewrapper tp-resizeme vert-line" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1000,"to":"o:1;","delay":1800,"ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]' data-height="300" data-hoffset="['250']" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-textalign="['left','left','left','left']" data-type="shape" data-voffset="['-193']" data-whitespace="nowrap" data-width="5" data-x="['left']" data-y="['middle','middle','middle','middle']" style="background-color:rgb(205,32,40);"></div><!-- палка слева -->
+								<div class="tp-caption tp-shape tp-shapewrapper tp-resizeme vert-line" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1000,"to":"o:1;","delay":1800,"ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]' data-height="480" data-hoffset="['130']" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-textalign="['left','left','left','left']" data-type="shape" data-voffset="['-104']" data-whitespace="nowrap" data-width="5" data-x="['left']" data-y="['middle','middle','middle','middle']" style="background-color:rgb(205,32,40);"></div><!-- палка слева -->
 
-									<div class="slider-title tp-caption tp-resizeme" data-elementdelay="0.05" data-fontsize="['72', '63','57','50']" data-height="none" data-hoffset="['300']" data-lineheight="['72','68', '62','54']" data-mask_in="x:50px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-responsive_offset="on" data-splitin="chars" data-splitout="none" data-start="500" data-textalign="['left']" data-transform_idle="o:1;" data-transform_in="x:[-155%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power2.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-voffset="['-200']" data-whitespace="nowrap" data-x="['left']" data-y="['middle','middle','middle','middle']" style="font-weight:600; color: #fff; letter-spacing:-0.05em;">
-										Home<br>
-										Addition<br>
-										Experts
-									</div><!-- Layer 6 -->
+								<div class="slider-title tp-caption tp-resizeme" data-elementdelay="0.05" data-fontsize="['72', '63','57','50']" data-height="none" data-hoffset="['200']" data-lineheight="['72','68', '62','54']" data-mask_in="x:50px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-responsive_offset="on" data-splitin="chars" data-splitout="none" data-start="500" data-textalign="['left']" data-transform_idle="o:1;" data-transform_in="x:[-155%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power2.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-voffset="['-150']" data-whitespace="nowrap" data-x="['left']" data-y="['middle','middle','middle','middle']" style="font-weight:600; letter-spacing:-0.05em; color: white">
+									Home<br>
+									Adition<br>
+									Experts
+								</div><!-- Layer 6 -->
+								<div class="slider-title tp-caption" data-elementdelay="0.05" data-fontsize="['18']" data-height="none" data-hoffset="['210']" data-lineheight="['20']" data-mask_in="x:50px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-responsive_offset="on" data-splitin="chars" data-splitout="none" data-start="1000" data-textalign="['left']" data-transform_idle="o:1;" data-transform_in="x:[155%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power2.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-voffset="['180']" data-whitespace="nowrap" data-x="['left']" data-y="['middle','middle','middle','middle']" style="font-weight:600; letter-spacing:0.1em; text-transform:uppercase;">
+								</div><!-- Layer 6 -->
 								<!-- <div class="slider-title tp-caption" data-elementdelay="0.05" data-fontsize="['18']" data-height="none" data-hoffset="['195']" data-lineheight="['20']" data-mask_in="x:50px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-responsive_offset="on" data-splitin="chars" data-splitout="none" data-start="1000" data-textalign="['left']" data-transform_idle="o:1;" data-transform_in="x:[155%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power2.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-voffset="['130']" data-whitespace="nowrap" data-x="['left']" data-y="['middle','middle','middle','middle']" style="font-weight:600; letter-spacing:0.1em; text-transform:uppercase;">
 									Design & Build
 								</div> -->
@@ -88,12 +92,28 @@
 				</div>
 			</section>
 
-			<div class="content">
+			<section id="knopka">
+
+
+					<div class="container">
+						<div class="col-xs-12 col-md-5 col-md-push-7 center">
+							<a href="http://www.acadiadc.ca/contact/" class="button bg" style="display: block; color: white; text-decoration: none"><span>Get a free expert consultation</span></a>
+						</div>
+						<div class="col-xs-12 col-md-7 col-md-pull-5 consult">
+							<div class="otstup"><div class="section-title section-about-title">Let's build your dream together!</div></div>
+						</div>
+					</div>
+
+
+			</section>
+
+			<div class="content" style="background: #f4f4f4">
 				<section id="info">
 					<div class="container">
 						<div class="row">
-							<div class="col-md-7 col-xs-6 col-sm-6"><div class="section_info"><span class="">Examples of additional stories are putting a second or third floor on a home which previously did not have one. At Acadia we are building and designing additions that fit the needs of our customers.<br><br><p class="center">Let's build your dream togeter!</p></span></div></div>
-							<div class="col-md-5 col-xs-6 col-sm-6"><div class="infosbg"><div class="button"><div class="bg"><span>Get a free expert consultation</span></div></div></div></div>
+							<!-- <div class=" col-12 col-sm-7"><div class="section_info"><span class="">Examples of additional stories are putting a second or third floor on a home which previously did not have one. At Acadia we are building and designing additions that fit the needs of our customers.<br><br></span></div></div> -->
+							<div class=" col-12 col-sm-5 free_consult"><div class="infosbg"></div></div>
+							<div class=" col-12 col-sm-7"><div class="section_info"><span class="">Examples of additional stories are putting a second or third floor on a home which previously did not have one. At Acadia we are building and designing additions that fit the needs of our customers.<br><br></span></div></div>
 						</div>
 					</div>
 				</section>
@@ -106,18 +126,18 @@
 								<h2>Our design & build process</h2>
 							</div>
 							<div  class="col-md-12 col-lg-12 col-xs-12">
-								<ul>
+								<ul class="mobprocess">
 									<li>
-										<img class="img-responsive centered" src="images/icons/icon1.png"><p class="descicon">Research and Analisys</p>
+										<img class="img-responsive centered iconh" src="images/icons/icon1.png"><p class="descicon">Research and Analisys</p>
 									</li>
 									<li>
-										<img class="img-responsive centered" src="images/icons/icon2.png"><p class="descicon">Design and Planning</p>
+										<img class="img-responsive centered iconh" src="images/icons/icon2.png"><p class="descicon">Design and Planning</p>
 									</li>
 									<li>
-										<img class="img-responsive centered" src="images/icons/icon3.png"><p class="descicon">Municipal Approval and Clearance</p>
+										<img class="img-responsive centered iconh" src="images/icons/icon3.png"><p class="descicon">Municipal Approval and Clearance</p>
 									</li>
 									<li>
-										<img class="img-responsive centered" src="images/icons/icon4.png"><p class="descicon">Build</p>
+										<img class="img-responsive centered iconh" src="images/icons/icon4.png"><p class="descicon">Build</p>
 									</li>
 								</ul>
 							</div>
@@ -1720,33 +1740,33 @@
 					<div class="container">
 						<div class="marg45">
 							<div class="col-md-12 center">
-								<h2>Other additions and services</h2>
+								<h2 class="h2-upper">Other additions and services</h2>
 							</div> 
 							<div class="col-md-4">
-								<div class="imgbaner"><img class="img-responsive" src="images/services/serv1.jpg"></div><p class="imgslogan">Indoor grow</p>
+								<div class="imgbaner"><img class="img-responsive" src="images/services/serv1.jpg"><p class="imgslogan md_lower">Kitchen extensions</p></div>
 							</div>
 							
 							
 							<div class="col-md-4">
-								<div class="imgbaner"><img class="img-responsive" src="images/services/serv2.jpg"></div><p class="imgslogan">Outdoor greenhouse</p>
+								<div class="imgbaner"><img class="img-responsive" src="images/services/serv2.jpg"><p class="imgslogan">Garage conversions and additions</p></div>
 							</div>
 							
 							
 							<div class="col-md-4">
-								<div class="imgbaner"><img class="img-responsive" src="images/services/serv3.jpg"></div><p class="imgslogan">Dispensaries</p>
+								<div class="imgbaner"><img class="img-responsive" src="images/services/serv3.jpg"><p class="imgslogan md_lower">Rear extensions</p></div>
 							</div>
 							
 							<div class="col-md-4">
-								<div class="imgbaner"><img class="img-responsive" src="images/services/serv4.jpg"></div><p class="imgslogan">Indoor grow</p>
+								<div class="imgbaner"><img class="img-responsive" src="images/services/serv4.jpg"><p class="imgslogan sm_lower">Outdoor living space</p></div>
 							</div>
 							
 							
 							<div class="col-md-4">
-								<div class="imgbaner"><img class="img-responsive" src="images/services/serv5.jpg"></div><p class="imgslogan">Outdoor greenhouse</p>
+								<div class="imgbaner"><img class="img-responsive" src="images/services/serv5.jpg"><p class="imgslogan sm_lower">Underground additions</p></div>
 							</div>
 							
 							<div class="col-md-4">
-								<div class="imgbaner"><img class="img-responsive" src="images/services/serv6.jpg"></div><p class="imgslogan">Dispensaries</p>
+								<div class="imgbaner"><img class="img-responsive" src="images/services/serv6.jpg"><p class="imgslogan">Commertial & Industrial additions</p></div>
 							</div>
 							
 						</div>
@@ -1756,18 +1776,20 @@
 				
 				<section id="weare">
 					<div class="container">
-						<div class="row marg45b">
+						<div class="row marg45b" style="margin-bottom: 25px">
 							<div class="col-md-12 center">
-								<h2>At Acadia we are:</h2>
+								<h2 class="h2-upper">At Acadia we are:</h2>
 							</div>
-							<div class="col-md-8">
-								<p class="textabout">Start with a free home assessment.  This will give everyone a better idea of what the scope of the project will be and what type of drawings and services will be required.
-								Once the home assessment is done and we have taken all the necessary measurements (this may require more than one visit to your home), we will prepare a set of drawings for a permit application. This set includes a site plan, floor plans, elevations and details as required by the scope of your project.</p><p class="textabout">Then we would cooperate with our contractors to provide a full set of construction drawings for their use and manage the building process.</p>
+							<div class="col-md-4">
+								<p class="textabout3">Start with a free home assessment.  This will give everyone a better idea of what the scope of the project will be and what type of drawings and services will be required.
+								Once the home assessment is done and we have taken all the necessary measurements (this may require more than one visit to your home), we will prepare a set of drawings for a permit application. 
 							</div>
 							<div class="col-md-4">
 								<div class="imgbaner"><img class="img-responsive" src="images/weare/weare.jpg"></div>
 							</div>
-							
+							<div class="col-md-4">
+								<p class="textabout3">This set includes a site plan, floor plans, elevations and details as required by the scope of your project. Then we would cooperate with our contractors to provide a full set of construction drawings for their use and manage the building process.</p>
+							</div>
 
 						</div>
 
@@ -1777,12 +1799,12 @@
 					<div class="col-md-12 center">
 						<h2>Experienced team of:</h2>
 					</div>
-					<div class="container">
+					<div class="container first_cont">
 						<div class="col-md-3 col-md-offset-1"><img class="img-responsive centered iconab" src="images/icons/icon6.png"><p class="descicon2">Architects & designers </p></div>
 						<div class="col-md-3"><img class="img-responsive centered iconab" src="images/icons/icon7.png"><p class="descicon2">Specialized contractors</p></div>
-						<div class="col-md-3"><img class="img-responsive centered iconab" src="images/icons/icon8.png"><p class="descicon2">Expert consultants</p></div>
+						<div class="col-md-3"><img class="img-responsive centered iconab" src="images/icons/icon8.png"><p class="descicon2 low">Expert consultants</p></div>
 					</div>
-					<div class="container">
+					<div class="container second_cont">
 						<div class="col-md-3 col-md-offset-3"><img class="img-responsive centered iconab" src="images/icons/icon9.png"><p class="descicon2">Engineers</p></div>
 						<div class="col-md-3"><img class="img-responsive centered iconab" src="images/icons/icon10.png"><p class="descicon2">Effective management</p></div>
 					</div>
@@ -1906,13 +1928,14 @@
 
 						<div class="row marg45b">
 							<div class="col-md-12">
-								<div class="nextstep"><span>Additions to existing homes usually come in two varieties: additional stories or additional footprint (or both).</span></div>
+								<div class="nextstep top_line"><span>Additions to existing homes usually come in two varieties: additional stories or additional footprint (or both).</span></div>
 
 							</div>
 							<div class="col-md-7 infoblock3">
+								<div class="Shape3"></div>
 								<p class="textabout2">Examples of additions that increase your home’s footprint would be extending your home into the side or backyard</p><p class="textabout2">Let’s make it happen !</p>
 							</div>
-							<div class="col-md-5"><div class="button2"><div class="bg2"><span>Contact us to get<br>a free consultation</span></div></div></div>
+							<div class="col-md-5"><div class="button2"><a href="http://www.acadiadc.ca/contact/" style="display: block; color: white; text-decoration: none" class="bg2"><span>Contact us to get<br>a free consultation</span></a></div></div>
 
 
 
@@ -1922,24 +1945,24 @@
 				<section>
 					<div class="whitebg">
 						<div class="container">
-							<div class="col-md-4"><p class="logotext">All plans and drawings by Acadia Drafting are completed according to the <b>Ontario Building Code (OBC)</b> and stamped by a <b>BCIN professional and/or Engineer</b> based on project requirements.</p>
+							<div class="col-md-4"><p class="textabout">All plans and drawings by Acadia Drafting are completed according to the <b>Ontario Building Code (OBC)</b> and stamped by a <b>BCIN professional and/or Engineer</b> based on project requirements.</p>
 							</div>
-							<div class="col-md-2"><img class="logos" src="images/logos/logo1.png" 
-								onmouseover="this.src='images/logos/logo1h.png';" 
-								onmouseout="this.src='images/logos/logo1.png';" />
-							</div>
-							<div class="col-md-2"><img class="logos" src="images/logos/logo2.png" 
-								onmouseover="this.src='images/logos/logo2h.png';" 
-								onmouseout="this.src='images/logos/logo2.png';" />
-							</div>
-							<div class="col-md-2"><img class="logos" src="images/logos/logo4.png" 
-								onmouseover="this.src='images/logos/logo4h.png';" 
-								onmouseout="this.src='images/logos/logo4.png';" />
-							</div>
-							<div class="col-md-2"><img class="logos" src="images/logos/logo3.png" 
-								onmouseover="this.src='images/logos/logo3h.png';" 
-								onmouseout="this.src='images/logos/logo3.png';" />
-							</div>
+							<div class="col-xs-3 col-md-2 upper"><img class="logos logos-min-1" src="images/logos/logo1.png" 
+							onmouseover="this.src='images/logos/logo1h.png';" 
+							onmouseout="this.src='images/logos/logo1.png';" />
+						</div>
+						<div class="col-xs-3 col-md-2 upper"><img class="logos logos-min-2" src="images/logos/logo2.png" 
+							onmouseover="this.src='images/logos/logo2h.png';" 
+							onmouseout="this.src='images/logos/logo2.png';" />
+						</div>
+						<div class="col-xs-3 col-md-2 upper"><img class="logos" src="images/logos/logo3.png" 
+							onmouseover="this.src='images/logos/logo3h.png';" 
+							onmouseout="this.src='images/logos/logo3.png';" />
+						</div>
+						<div class="col-xs-3 col-md-2 upper"><img class="logos" src="images/logos/logo4.png" 
+							onmouseover="this.src='images/logos/logo4h.png';" 
+							onmouseout="this.src='images/logos/logo4.png';" />
+						</div>
 						</div>
 					</div>
 				</section>
@@ -2133,5 +2156,6 @@
 		</script> 
 		<script src="js/rev-slider-init.js">
 		</script>
+		<script src="js/preload.js"></script>
 	</body>
 	</html>
