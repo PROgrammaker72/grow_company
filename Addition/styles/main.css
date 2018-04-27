@@ -11,11 +11,11 @@ html{
 	width: 100%;
 	min-width: 100%;
 	height: 100%;
-	font-size: 16px;
+	/*font-size: 16px;*/
 	color: #000;
 	box-sizing: border-box;
 	font-weight: 400;
-	font-family: 'El Messiri', sans-serif;
+	/*font-family: 'El Messiri', sans-serif;*/
 }
 body{
 	position: relative;
@@ -54,10 +54,11 @@ h1{
 	transition: all .4s ease-in-out;
 }
 .house{
+  max-height: 275px;
 	position: relative;
-	margin-top: 3%;
+	margin-top: 100px;
 	margin-bottom: 3%;
-	width: 100%;
+	width: 70%;
 }
 .dot{
 	position: absolute;
@@ -192,7 +193,7 @@ bottom: 10%;
 .section-title{
 	opacity: 0;
 	text-align:  center;
-	font-size:  24px;
+	font-size:  20px;
 	animation-name: fadeIn;
 	animation-duration: 1s;
 	animation-timing-function: ease-in-out;
@@ -212,7 +213,7 @@ bottom: 10%;
 #content-house{
 	min-height: 130px;
 	margin-top: 20px;
-	width: 100%;
+	width: 30%;
 }
 @keyframes cycleline {
   0% {
@@ -268,9 +269,21 @@ bottom: 10%;
 	left: 50%;
 }
 }
-@media (max-width: 650px) {
-	.sections-conteiner{
-		flex-direction: column-reverse;
+
+@media (min-width: 1130px) {
+  .desc {
+    display: none;
+  }
+}
+
+@media (max-width: 1130px) {
+	.house {
+		width: 100%;
     padding-top: 40px;
+    max-height: unset;
+  }
+
+  #content-house {
+    width: 100%;
   }
 }
